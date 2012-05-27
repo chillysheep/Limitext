@@ -4,28 +4,4 @@
 * View project on GitHub at: 
 */
 
-(function( $ ) {
-  $.fn.limitext = function(options) {
-    var defaults = {
-      output : $('.lt-output'),
-      limit : 250
-    }
-    var options = $.extend(defaults,  options);
-    return this.each(function() {
-       var charlimit = options.limit;
-       var output = options.output;
-       var _this = $(this);
-       
-       (_this.val() !== 0) ? output.html(charlimit - _this.val().length) : output.html(charlimit);
-
-       _this.keyup(function(){
-        if (charlimit < _this.val().length) {
-          _this.val(_this.val().substr(0, charlimit));
-        }
-        else {
-          output.html(charlimit - _this.val().length);   
-          }
-       });
-    });         
-  };
-})( jQuery ); 
+(function(a){a.fn.limitext=function(b){var c={output:a(".lt-output"),limit:250};var b=a.extend(c,b);return this.each(function(){var c=b.limit;var d=b.output;var e=a(this);e.val()!==0?d.html(c-e.val().length):d.html(c);e.keyup(function(){if(c<e.val().length){e.val(e.val().substr(0,c))}else{d.html(c-e.val().length)}})})}})(jQuery)
