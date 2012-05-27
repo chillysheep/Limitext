@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+  <title>Limitext - a jQuery Plugin by James Baldwin</title>
+  </head>
+  <body>
+    <a href="https://github.com/chillysheep/Limitext"><img class="fork" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <section class="content">
+      <h1>Limitext</h1>
+      <h2>A jQuery plugin by <a href="http://jbaldwin.me/" target="_blank"> James Baldwin</a></h2>
+       <textarea class="example" placeholder="Start typing here...."></textarea>
+       <p>You have <span class="lt-output"></span> characters left</p>
+       <div class="break"></div> 
+       <h2>How to use?</h2>
+       <p>Create a textarea. You have full control over where your message appears, so also add your message where appropriate, ensuring you include a span for the count output.</p>
+       <pre class="prettyprint">&lt;textarea class="example" placeholder="Start typing here...."&gt;&lt;/textarea&gt;<br>&lt;p>You have  &lt;span class="lt-output">&lt;/span> characters left &lt;/p></pre>
+      <p>Include jQuery and the limitext plugin file in your page. Then as part as your document ready, call the method on your input.</p>
+      <pre class="prettyprint">$(function() {
+  $('.example').limitext();
+});</pre>
+  <p>You can override the default values if you wish by passing in an object.</p>
+  <pre class="prettyprint">$(function() {
+  $('.example').limitext({
+    limit: 500,
+    output: $('.some-other-span-name')
+  });
+});</pre>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out Limitext - a cool plugin by James Baldwin" data-via="chillysheepltd" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="prettify.js"></script>
+    <script src="https://raw.github.com/chillysheep/Limitext/master/jquery.limitext.min.js"></script>
+    <script>
+      $(function() {
+        $('.example').limitext();
+        prettyPrint();
+      });
+      
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24034971-4']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
