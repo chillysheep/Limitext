@@ -3,14 +3,26 @@
   James Baldwin - http://jbaldwin.me/
 */ 
 
-
 // reset 
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{background-color:#ff9;color:#000;text-decoration:none;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}pre,code,kbd,samp{font-family:monospace, sans-serif;}ul,ol{margin-left:2em;}ol{list-style-type:decimal;}nav ul,nav li{list-style:none;list-style-image:none;margin:0;}small{font-size:85%;}td{vertical-align:top;}sub,sup{font-size:75%;line-height:0;position:relative;}sup{top:-.5em;}sub{bottom:-.25em;}pre{white-space:pre-wrap;padding:15px;}textarea{overflow:auto;}.ie6 legend,.ie7 legend{margin-left:-7px;}input[type=checkbox]{vertical-align:bottom;}.ie7 input[type=checkbox]{vertical-align:baseline;}label,input[type=button],input[type=submit],input[type=image],button{cursor:pointer;}button,input,select,textarea{margin:0;}button{width:auto;overflow:visible;}body,select,input,textarea{color:#444;font-family:Arial, Helvetica, sans-serif;}a,a:active,a:visited{color:#607890;}a:hover{color:#036;}strong,th,h1,h2,h3,h4,h5,h6{font-weight:700;}input[type=radio],.ie6 input{vertical-align:text-bottom;}a:hover,a:active,*{outline:none;}
 
+// mixins 
+
+.gradientLinearTriple (@background, @midpoint) {
+    background: @background; 
+    background: -moz-linear-gradient(left,  @background 0%, @midpoint 50%, @background 100%); 
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,@background), color-stop(50%,@midpoint), color-stop(100%,@background)); 
+    background: -webkit-linear-gradient(left,  @background 0%,@midpoint 50%,@background 100%); 
+    background: -o-linear-gradient(left,  @background 0%,@midpoint 50%,@background 100%); 
+    background: -ms-linear-gradient(left,  @background 0%,@midpoint 50%,@background 100%); 
+    background: linear-gradient(left,  @background 0%,@midpoint 50%,@background 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@background, endColorstr=@background,GradientType=1 ); }
+
 // prettify 
 
 .pln{color:#000}@media screen{.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:#606}.lit{color:#066}.pun,.opn,.clo{color:#660}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun,.opn,.clo{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:25px 30px}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+
 
 pre {
   background: #fff;
@@ -29,18 +41,7 @@ pre {
 html, body {
   margin: 0;
   padding: 0;
-
-  
-background: #b1c951; /* Old browsers */
-background: -moz-linear-gradient(left,  #b1c951 0%, #a8d358 50%, #b1c951 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#b1c951), color-stop(50%,#a8d358), color-stop(100%,#b1c951)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #b1c951 0%,#a8d358 50%,#b1c951 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #b1c951 0%,#a8d358 50%,#b1c951 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #b1c951 0%,#a8d358 50%,#b1c951 100%); /* IE10+ */
-background: linear-gradient(left,  #b1c951 0%,#a8d358 50%,#b1c951 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b1c951', endColorstr='#b1c951',GradientType=1 ); /* IE6-9 */
-
-  
+  .gradientLinearTriple(#c0d95e, #a9c14a); 
 }
 
 * {
