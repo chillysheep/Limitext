@@ -1,7 +1,7 @@
 /*!
 * jQuery Limitext Plugin
 * Examples at: http://limitext.jbaldwin.me
-* View project on GitHub at: 
+* View project on GitHub at: https://github.com/chillysheep/Limitext
 */
 
 (function( $ ) {
