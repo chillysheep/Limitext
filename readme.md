@@ -1,6 +1,6 @@
 # Limitext Jquery Plugin
 
-## Demo
+## Demo and Usage Guide
 
 [http://limitext.jbaldwin.me](http://limitext.jbaldwin.me)
 
