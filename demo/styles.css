@@ -1,0 +1,441 @@
+/* 
+  Please note, these few styles are not required in any way for the plugin to work, and are merely for demonstration purposes only.
+  James Baldwin - http://jbaldwin.me/
+*/html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+ul,
+ol {
+  margin-left: 2em;
+}
+ol {
+  list-style-type: decimal;
+}
+nav ul,
+nav li {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+}
+small {
+  font-size: 85%;
+}
+td {
+  vertical-align: top;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+pre {
+  white-space: pre-wrap;
+  padding: 15px;
+}
+textarea {
+  overflow: auto;
+}
+.ie6 legend,
+.ie7 legend {
+  margin-left: -7px;
+}
+input[type=checkbox] {
+  vertical-align: bottom;
+}
+.ie7 input[type=checkbox] {
+  vertical-align: baseline;
+}
+label,
+input[type=button],
+input[type=submit],
+input[type=image],
+button {
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+button {
+  width: auto;
+  overflow: visible;
+}
+body,
+select,
+input,
+textarea {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a,
+a:active,
+a:visited {
+  color: #607890;
+}
+a:hover {
+  color: #036;
+}
+strong,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+input[type=radio],
+.ie6 input {
+  vertical-align: text-bottom;
+}
+a:hover,
+a:active,
+* {
+  outline: none;
+}
+.pln {
+  color: #000000;
+}
+@media screen {
+  .str {
+    color: #008800;
+  }
+  .kwd {
+    color: #000088;
+  }
+  .com {
+    color: #880000;
+  }
+  .typ {
+    color: #660066;
+  }
+  .lit {
+    color: #006666;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #666600;
+  }
+  .tag {
+    color: #000088;
+  }
+  .atn {
+    color: #660066;
+  }
+  .atv {
+    color: #008800;
+  }
+  .dec,
+  .var {
+    color: #660066;
+  }
+  .fun {
+    color: #ff0000;
+  }
+}
+@media print, projection {
+  .str {
+    color: #006600;
+  }
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+  .lit {
+    color: #004444;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #444400;
+  }
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+  .atn {
+    color: #440044;
+  }
+  .atv {
+    color: #006600;
+  }
+}
+pre.prettyprint {
+  padding: 25px 30px;
+}
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+  list-style-type: none;
+}
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  background: #eeeeee;
+}
+pre {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px 0px #9bb143;
+  box-shadow: 0px 0px 20px 0px #9bb143;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin: 0 0 50px;
+  text-shadow: none;
+  text-align: left;
+}
+::-moz-selection {
+  background: #91a738;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #91a738;
+  color: #fff;
+  text-shadow: none;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #c0d95e;
+  background: -moz-linear-gradient(left, #c0d95e 0%, #a9c14a 50%, #c0d95e 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c0d95e), color-stop(50%, #a9c14a), color-stop(100%, #c0d95e));
+  background: -webkit-linear-gradient(left, #c0d95e 0%, #a9c14a 50%, #c0d95e 100%);
+  background: -o-linear-gradient(left, #c0d95e 0%, #a9c14a 50%, #c0d95e 100%);
+  background: -ms-linear-gradient(left, #c0d95e 0%, #a9c14a 50%, #c0d95e 100%);
+  background: linear-gradient(left, #c0d95e 0%, #a9c14a 50%, #c0d95e 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#c0d95e, endColorstr=#c0d95e, GradientType=1);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.break {
+  height: 2px;
+  margin: 35px 0;
+  background: rgba(155, 177, 67, 0.4);
+}
+.fork {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+h1 {
+  font: normal 7em/1em "Londrina Solid", "Helvetica", "Arial", sans-serif;
+  margin: 0 0 5px 0;
+}
+h2 {
+  font: normal 2.5em/1.5em "Londrina Solid", "Helvetica", "Arial", sans-serif;
+  margin: 0 0 10px 0;
+}
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #699025;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+a:hover {
+  color: #e74f5f;
+}
+.content {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px #9bb143;
+}
+.content p {
+  font: normal 1.6em/1.5em "Londrina Solid", "Helvetica", "Arial", sans-serif;
+  margin: 0 0 20px 0;
+}
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  border: none;
+  resize: none;
+  padding: 30px;
+  font: normal 2em/1em "Londrina Solid", "Helvetica", "Arial", sans-serif;
+  color: #969c9f;
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 0px 20px 0px #9bb143;
+  box-shadow: 0px 0px 20px 0px #9bb143;
+}
