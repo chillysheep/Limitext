@@ -2,7 +2,7 @@
 
 ## Demo and Usage Guide
 
-[http://limitext.jbaldwin.me](http://limitext.jbaldwin.me)
+[http://chillysheep.github.com/Limitext/](http://chillysheep.github.com/Limitext/)
 
 ## Overview
 

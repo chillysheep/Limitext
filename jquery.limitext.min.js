@@ -1,6 +1,6 @@
 /*!
 * jQuery Limitext Plugin
-* Examples at: http://limitext.jbaldwin.me
+* Examples at: http://chillysheep.github.com/Limitext/
 * View project on GitHub at: https://github.com/chillysheep/Limitext
 */
 
