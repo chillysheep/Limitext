@@ -18,7 +18,7 @@
        
        (_this.val() !== 0) ? output.html(charlimit - _this.val().length) : output.html(charlimit);
 
-       _this.keyup(function(){
+       _this.on('input keyup propertychange', function(){
         if (charlimit < _this.val().length) {
           _this.val(_this.val().substr(0, charlimit));
         }
